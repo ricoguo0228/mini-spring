@@ -1,6 +1,6 @@
 package test;
 
-import context.ClassPathXmlApplicationContext;
+import context.highLevel.ClassPathXmlApplicationContext;
 
 public class Test1 {
     public static void main(String[] args) throws Exception {
