@@ -1,9 +1,9 @@
-package core;
+package core.resource.resourceImpl;
 
-import beans.BeanDefinition;
-import context.interfaces.BeanFactory;
-import context.normal.SimpleBeanFactory;
-import core.interfaces.Resource;
+import beans.BeansException;
+import beans.beanDefinition.BeanDefinition;
+import context.contextImpl.normal.SimpleBeanFactory;
+import core.resource.Resource;
 import org.dom4j.Element;
 
 /**
@@ -14,14 +14,14 @@ public class XmlBeanDefinitionReader {
     public XmlBeanDefinitionReader(SimpleBeanFactory beanFactory) {
         this.simpleBeanFactory = beanFactory;
     }
-    public void loadBeanDefinitions(Resource resource) {
+    public void loadBeanDefinitions(Resource resource) throws BeansException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         // 一次性把资源全加载完
         while (resource.hasNext()) {
             Element element = (Element) resource.next();
             String beanID = element.attributeValue("id");
             String beanClassName = element.attributeValue("class");
             BeanDefinition beanDefinition = new BeanDefinition(beanID, beanClassName);
-            this.simpleBeanFactory.registerBeanDefinition(beanDefinition);
+            this.simpleBeanFactory.registerBeanDefinition(beanID,beanDefinition);
         }
     }
 }

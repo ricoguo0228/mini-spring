@@ -4,23 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af8e1b0e-fdc5-4be1-b42e-5c1aeb0542b4" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/beans/BeanDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/beans/BeansException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/context/highLevel/ClassPathXmlApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/context/interfaces/BeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/context/interfaces/SingletonBeanRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/context/normal/DefaultSingletonBeanRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/context/normal/SimpleBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/core/ClassPathXmlResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/core/XmlBeanDefinitionReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/core/interfaces/Resource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/test/AService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/test/AServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/java/test/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rico/resources/beans.xml" afterDir="false" />
+    <list default="true" id="af8e1b0e-fdc5-4be1-b42e-5c1aeb0542b4" name="更改" comment="初始化：带有简单 IOC 功能的 mini-spring">
+      <change afterPath="$PROJECT_DIR$/src/rico/java/beans/argument/ArgumentValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rico/java/beans/argument/ArgumentValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rico/java/beans/argument/PropertyValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rico/java/beans/argument/PropertyValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rico/java/beans/beanDefinition/BeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rico/java/beans/beanDefinition/BeanDefinitionRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rico/java/core/listen/ApplicationEventPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/beans/BeanDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/context/highLevel/ClassPathXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rico/java/context/contextImpl/highLevel/ClassPathXmlApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/context/interfaces/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rico/java/context/BeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/context/interfaces/SingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rico/java/context/SingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/context/normal/DefaultSingletonBeanRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rico/java/context/contextImpl/normal/DefaultSingletonBeanRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/context/normal/SimpleBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rico/java/context/contextImpl/normal/SimpleBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/core/ClassPathXmlResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rico/java/core/resource/resourceImpl/ClassPathXmlResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/core/XmlBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rico/java/core/resource/resourceImpl/XmlBeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/core/interfaces/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rico/java/core/resource/Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rico/java/test/Test1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +78,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="mini-spring" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -96,7 +90,17 @@
       <workItem from="1706722650472" duration="1983000" />
       <workItem from="1706726661823" duration="218000" />
       <workItem from="1706726884324" duration="9000" />
+      <workItem from="1706726906420" duration="2121000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化：带有简单 IOC 功能的 mini-spring">
+      <option name="closed" value="true" />
+      <created>1706727099082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706727099082</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="初始化：带有简单 IOC 功能的 mini-spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化：带有简单 IOC 功能的 mini-spring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

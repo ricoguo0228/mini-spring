@@ -1,6 +1,6 @@
-package context.normal;
+package context.contextImpl.normal;
 
-import context.interfaces.SingletonBeanRegistry;
+import context.SingletonBeanRegistry;
 
 import java.util.ArrayList;
 import java.util.List;

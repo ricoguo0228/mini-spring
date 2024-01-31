@@ -1,4 +1,4 @@
-package core.interfaces;
+package core.resource;
 
 import java.util.Iterator;
 

@@ -1,4 +1,4 @@
-package context.interfaces;
+package context;
 
 public interface SingletonBeanRegistry {
     void registerSingleton(String beanName, Object singletonObject);

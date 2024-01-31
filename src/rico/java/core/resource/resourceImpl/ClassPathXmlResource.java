@@ -1,6 +1,6 @@
-package core;
+package core.resource.resourceImpl;
 
-import core.interfaces.Resource;
+import core.resource.Resource;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
